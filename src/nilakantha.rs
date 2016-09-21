@@ -7,11 +7,11 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let it = args[1].parse::<i32>().unwrap();
     println!("Making Pie");
-    for x in 0..it {
+    for _ in 0..it {
         if sign {
-            p += 4.0/(count*(count+1.0)*(count+2.0)); }
-        else {
-            p -= 4.0/(count*(count+1.0)*(count+2.0));
+            p += 4.0 / (count * (count + 1.0) * (count + 2.0));
+        } else {
+            p -= 4.0 / (count * (count + 1.0) * (count + 2.0));
         }
         sign = !sign;
         count += 2.0;

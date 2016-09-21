@@ -1,0 +1,10 @@
+[package]
+name = "piecalc"
+version = "0.0.1"
+authors = [ "C-gotoh" ]
+[[bin]]
+name = "leibniz-series"
+path = "src/leibniz.rs"
+[[bin]]
+name = "nilakantha-series"
+path = "src/nilakantha.rs"
